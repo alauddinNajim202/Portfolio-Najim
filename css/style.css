@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem ;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: left;
+    background-color: rgb(152, 189, 195);
+}
+
+/* headeer */
+
+ .about-img{
+    margin-left: -70px;
+    right: -45px;
+ }
+
+ .btn{
+    padding: 10px 20px;
+    border-radius: 100px;
+ }
+
+ .btn-white{
+    background-color: #ffffff;
+    border: 2.4px solid black;
+    margin-right: 20px;
+ }
+
+ .btn-blue{
+    color: #ffffff;
+    border: 2.4px solid black;
+ }
+
+ .hero-text{
+    margin-top: 120px;
+ }
+
+ .typed-cursor{
+    font-size: 45px;
+    color: #ffffff;
+ }
+ .position-absolute{
+    font-weight: 700;
+ }
+
+
+ /* vavbar  */
+ a{
+   color: palevioletred;
+   text-decoration: none;
+   background-color: transparent;
+
+ }
+ a:hover{
+   color: rgb(25, 201, 99);
+   text-decoration: underline;
+ }
+
+ /* .navbar-light{
+   display: none;
+ } */
+ .navbar-light .navbar-nav .nav-link{
+   padding: 25px 10px ;
+   color: #343a40;
+   font-weight: 500;
+   outline: none;
+ }
+
+ /* about  */
+
+ .blue:hover{
+   background-color: black;
+   color: rgb(26, 190, 190);
+   text-decoration: none;
+ }
+
+
+ /* skill section */
+
+ .skill-container{
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px;
+   box-shadow: 5px 10px 10px white;
+   border-radius: 5px;
+   background-color: lavender;
+}
+
+.skill-container li{
+   margin: 30px;
+   color:black;
+   font-weight: bolder;
+   position: relative;
+   text-transform: uppercase;
+   list-style-type: none;
+}
+
+.skill-container li::before{
+   content: '';
+   position: absolute;
+   top: calc( 100% + 5px);
+   left: 0px;
+
+
+   background-color: gainsboro;
+   width: 100%;
+   height: 20px;
+   border-radius: 50px;
+
+}
+.skill-container li::after{
+   content: '';
+   position: absolute;
+   top: calc( 100% + 5px);
+   left: 0px;
+
+
+   background-color:ivory;
+   width: 0;
+   height: 25px;
+   border-radius: 50px;
+
+   animation-duration: 3s;
+   animation-delay: 1s ;
+   animation-iteration-count: infinite;
+
+}
+
+.skill-container li.html::after{
+   animation-name: html;
+}
+
+@keyframes html{
+   to{
+       width: 99%;
+       background-color: khaki;
+   }
+}
+
+.skill-container li.css::after{
+   animation-name: css;
+}
+
+@keyframes css{
+   to{
+       width: 90%;
+       background-color:lawngreen;
+   }
+}
+
+.skill-container li.js::after{
+   animation-name: js;
+}
+
+@keyframes js{
+   to{
+       width: 40%;
+       background-color:lightcoral;
+   }
+}
+
+.skill-container li.java::after{
+   animation-name: java;
+}
+
+@keyframes java{
+   to{
+       width: 95%;
+       background-color:lightseagreen;
+   }
+}
+
+.skill-container li.cplus::after{
+   animation-name: c_programming;
+}
+
+@keyframes c_programming{
+   to{
+       width: 99%;
+       background-color: cornflowerblue;
+   }
+}
+
+
+/* services  */
+
+.service-h4{
+   padding-bottom: 30px;
+}
+
+.service-icon{
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 60px;
+
+}
+
+.service-box{
+   box-shadow: 0px 1px 7x rgba(0,0,0,0.1);
+   padding: 5px;
+   
+}
+
+.service-box:hover{
+   box-shadow: 0px 1px 13px rgb(27, 27, 27,0.26);
+}
+
+
+/* portfolio  */
+
+.portfolio-item .portfolio-btn{
+   position: absolute;
+   width: 0;
+   height: 0;
+   top: 50%;
+   left: 50%;
+   border-radius: 4px;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.portfolio-item:hover .portfolio-btn{
+   opacity: 1;
+   width: calc(100% - 60px);
+   height: calc(100% - 60px);
+   top: 30px;
+   left: 30px;
+}
+
+
+
+
+.hr_style{
+   border: 10px  red ;
+   border-bottom: none;
+   
+   
+}
+
+.img1{
+   width: 260px;
+   height: 270px;
+
+}
+
+.carousel-item{
+   padding: 5% 15% ;
+   text-align: center;
+   font-style: oblique;
+}
